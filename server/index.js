@@ -10,7 +10,7 @@ app.use(express.static(distFolder));
 const PORT = process.env.PORT || 8080;
 
 app.get("/*", (req, res) => {
-  res.sendFile(path.join(distFolder, locale, "index.html"));
+  res.sendFile(path.join(distFolder, "index.html"));
 })
 app.listen(PORT, () => {
   console.log(`Webshop UI started on port ${PORT}`);
