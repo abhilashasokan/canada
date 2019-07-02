@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 
-const distFolder = path.join(__dirname, "..", "/home/site/wwwroot/dist");
+const distFolder = path.join(__dirname, "..", "dist");
 
 const app = express();
 
